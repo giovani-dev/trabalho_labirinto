@@ -24,7 +24,7 @@ void jogador(){
     int eixo_x, eixo_y;
 
     cout << "Digite quantas casas voce quer andar pelo mapa:" << endl;
-    
+
     cout << "Eixo x: ";
     cin >> eixo_x;
 

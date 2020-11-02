@@ -12,6 +12,7 @@ int numero_armadilha(){
    return random_event;
 }
 
+
 void gera_armadilhas(){
    int caracter, linha;
 
