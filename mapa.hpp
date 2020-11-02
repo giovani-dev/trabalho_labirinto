@@ -1,8 +1,5 @@
-#include "global.h"
-#include <stdlib.h>
-#include <time.h>
-#include <iostream>
-using namespace std;
+#include "global.hpp"
+
 
 int numero_armadilha(){
    int random_event = rand() % 7;
@@ -29,9 +26,3 @@ void gera_armadilhas(){
 }
 
 
-int main(){
-   // Primeiro devemos chamar essa função, pois ela manipula a variavel global do mapa
-   gera_armadilhas();
-   cout << mapa[6][1] << endl;
-   return 0;
-}

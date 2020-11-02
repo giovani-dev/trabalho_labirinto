@@ -13,9 +13,9 @@ int mapa[6][12] = {
     {0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 };
 
+int valor_posicao;
+
 int global_vida = 100;
 
-// a variavel posicao_jogador representa o eixo x, y
-int posicao_jogador[2] = {1,2};
-
-int total_passos_errados = 0;
+// a variavel posicao_jogador representa o eixo x, y. No qual 
+int char posicao_jogador[2];
