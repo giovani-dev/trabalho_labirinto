@@ -1,4 +1,4 @@
-#include "global.hpp"
+// #include "global.hpp"
 
 
 // O jogador vai levar dano quando o valor da posicao atual for > 5 e < 9
@@ -18,7 +18,6 @@ void set_posicao_jogador(int eixo_x, int eixo_y){
 
 
 void dano_jogador(){
-    // se o jogador sair do mapa ele morre tbm
     if(posicao_jogador[0] > 6 || posicao_jogador[1] > 12){
         global_vida -= 100;
     }
@@ -36,6 +35,15 @@ void movimenta_jogador(int eixo_x, int eixo_y){
     dano_jogador();
 }
 
+void painel_jogador(){
+    cout << "---------------------------------------------- Painel do Jogador -----------------------------------------" << endl << endl;
+    cout << "Total da sua vida: " << global_vida;
+    cout << endl;
+    cout <<  "Sua posição atual é: " "X(" << posicao_jogador[0] << ")" <<  " " << "Y(" << posicao_jogador[1] << ")" << endl;
+    cout << "Quantidade minima de movimentos: " << qtde_minima_movimentos;
+    cout << endl << endl;
+    cout << "----------------------------------------------------------------------------------------------------------" << endl << endl;
+}
 
 void jogador(){
     int eixo_x, eixo_y;
