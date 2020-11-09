@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <iostream>
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
 using namespace std;
 
 int mapa[24][12] = {
@@ -42,3 +47,8 @@ int posicao_jogador[2] = {-1,-1};
 int posicao_jogador_anterior[2];
 
 bool final_gerado = false;
+
+int tamanho_barra = 25;
+string barra;
+
+char menssagens_inicial[] = "Depois de você entrar em uma masmorra de nível baixo com seu grupo de companheiros, descobre que era uma armadilha de monstros, e sua equipe toda acaba morrendo, você tenta fugir e a única coisa que encontra a frente é um labirinto";
