@@ -5,6 +5,8 @@
 
 
 int main(){
+   // introducao();
+   barra_de_carregamento();
    manipula_mapa("iterar");
    system("clear");
    // Primeiro devemos chamar essa função, pois ela manipula a variavel global do mapa
@@ -17,5 +19,6 @@ int main(){
       }
       system("clear");
    }
+   creditos();
    return 0;
 }
