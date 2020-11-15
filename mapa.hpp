@@ -19,7 +19,7 @@ void gera_iteracao(int eixo_x, int eixo_y){
    if(mapa[eixo_y][eixo_x] > 0 && mapa[eixo_y][eixo_x] <= 8 && mapa[eixo_y][eixo_x] != 2){
       mapa[eixo_y][eixo_x] = numero_armadilha();
       qtde_maxima_movimentos += 1;
-      gerar_final_do_jogo(eixo_x, eixo_y);
+      // gerar_final_do_jogo(eixo_x, eixo_y);
    }
 }
 
